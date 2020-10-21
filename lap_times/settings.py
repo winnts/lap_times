@@ -25,7 +25,7 @@ SECRET_KEY = '@1#_vw172xu-u%fxsu@*f6b13ma4_#zkc0$p%&5zwi^qhlror9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['laptimes-env.eba-efhmrp92.us-west-2.elasticbeanstalk.com', '127.0.0.1']
+ALLOWED_HOSTS = ['ec2-18-236-210-193.us-west-2.compute.amazonaws.com', '127.0.0.1']
 
 
 # Application definition
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-# WSGI_APPLICATION = 'lap_times.wsgi.application'
+WSGI_APPLICATION = 'lap_times.wsgi.application'
 
 
 # Database
