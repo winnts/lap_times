@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BEST LAP TIMES</title>
+</head>
+<body>
+{% if track_times_list %}
+    <ul>
+        {% for track in track_times_list %}
+            <li>{{ track }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No data are available.</p>
+{% endif %}
+</body>
+</html>
